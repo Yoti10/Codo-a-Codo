@@ -10,12 +10,11 @@ html{
     background-color: #cedeffbe;
 }
 
-
-
 .header {
   background-color: #0769e9;
   height: 80px;
-  position: fixed;
+  /*[position: fixed;] Modifiqué esta propiedad para que el header no pise los contenidos que le siguen. Reemplacé por la propiedad "position: sticky;"*/
+  position: sticky;
   width: 100%;
   top: 0;
   left: 0;

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulonera</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto-styles.css">
+    <!-- Bootstrap css (sólo en formulario) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Cambié algunos atributos en este html:
+        class="nav" -> class="nav-c"
+        class="nav-link" -> class="nav-link-c"
+        Los estilos para estas clases estan en el archivo "contacto-styles.css"
+    Esto lo hice para que los estilos de Bootstrap no se superpusieran a los estilos originales (en bootstrap también existen las clases nav y nav-link)-->
+        <nav class="nav-c">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo_buloneria.png" alt="Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="productos.html" class="nav-menu-link nav-link-c">Productos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="quienes.html" class="nav-menu-link nav-link-c">Quienes somos</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="contacto.html" class="nav-menu-link nav-link-c">Contacto</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="registro.html" class="nav-menu-link nav-link-c nav-menu-link_active">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="container mb-5">
+            <h1>Dejanos tu mensaje</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sequi velit unde. Adipisci,
+                distinctio doloremque, temporibus dolorem quaerat velit neque totam inventore illo similique, nulla quia
+                quae nostrum tempore blanditiis?</p>
+        </div>
+
+        <div class="container">
+            <form id="contactForm" action="" method="" class="p-3 rounded text-white">
+                <div class="mb-3 row">
+                    <label for="nombre" class="form-label col-sm-3">Nombre:</label>
+                    <div class="col-sm-9">
+                    <input class="form-control" type="text" id="nombre" name="nombre">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+
+                    <label class="form-label col-sm-3" for="email">Correo Electrónico:</label>
+                    <div class="col-sm-9">
+                    <input class="form-control" type="email" id="email" name="email">
+                </div>
+                </div>
+
+                <div class="mb-2">
+                    <label class="form-label" for="mensaje">Tu mensaje:</label>
+                    <textarea id="msj" class="form-control" id="mensaje" name="mensaje" rows="10"></textarea>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label text-bg-info p-1 rounded-1" for="checkbox">Eh leído y acepto la <a href="#" class="text-white">política de privacidad</a></label>
+                    <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox">
+                 
+                </div>
+
+                <div class="container btn">
+                    <input type="submit" value="Enviar" class="btn btn-primary" />
+                    <input type="reset" value="Limpiar" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer align="center">
+
+        <hr class="linea">
+        <br><br>
+        <a href="http://facebook.com"><img src="../img/logo-face.png" alt="facebook"></a>
+        <a href="http://instagram.com"><img src="../img/logo-inst.png" alt="instagram"></a>
+        <a href="http://twitter.com"><img src="../img/logo-tw.png" alt="twitter"></a>
+        <a href="http://linkedin.com"><img src="../img/logo-linked.png" alt="linkedin"></a>
+        <p>Direccion: Calle Falsa 123, CABA</p>
+        <p>Telefono: 1112345678</p>
+        <p>Copyright 2023©</p>
+        <br><br>
+        <p>Página Web Desarrollada en Curso Codo a Codo</p>
+
+    </footer>
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-menu_visible");
+
+            if (navMenu.classList.contains("nav-menu_visible")) {
+                navToggle.setAttribute("aria-label", "Cerrar menú");
+            } else {
+                navToggle.setAttribute("aria-label", "Abrir menú");
+            }
+        });
+    </script>
+    <!-- Bootstrap js (sólo en formulario) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+
+.nav-c{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link-c {
+    color: white;
+    text-decoration: none;
+  }
+
+main{
+    margin: 2em;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+    background-color: #3d348b89;
+}
+
+#msj{
+    resize: none;
+    height: fit-content;
+}
+
