@@ -4,165 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulonera</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script
-    src="https://kit.fontawesome.com/7e5b2d153f.js"
-    crossorigin="anonymous"
-  ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header-foot.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-     
-
-        <nav class="nav">
-            <a href="index.html" class="logo">
-                <img src="./img/logo_buloneria.png" alt="Logo" >
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menú">
-              <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-              <li class="nav-menu-item">
-                <a href="./html/productos.html" class="nav-menu-link nav-link">Productos</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="./html/quienes.html" class="nav-menu-link nav-link">Quienes somos</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="./html/contacto.html" class="nav-menu-link nav-link">Contacto</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="./html/registro.html" class="nav-menu-link nav-link nav-menu-link_active"
-                  >Registrarse</a>
-              </li>
+        
+        <a href="index.html"><img src="img/logo_buloneria.png" alt="" class="logo"></a>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        
+        <div class="nav-header" id="nav-header">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list-c">
+                <li><a href="./html/productos.html">Productos</a></li>
+                <li><a href="./html/quienes.html">Quienes Somos</a></li>
+                <li><a href="./html/registro.html">Registro</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
             </ul>
-          </nav>
+        
+        </div>
     </header>
     <main>
-         <br>
-        <br>
-     
-
-      <section class="promos">
+        <section class="promos">
         
-        <div class="carrusel-container">
-          <div class="carrusel">
-            <h2>PROMOCIONES/NOTICIAS</h2>
-            <br>
-              <ul>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                          <h2>PROMO 1</h2> <!-- Para diferenciar imagenes-->
-                         
-                      </div> 
+            <div class="carrusel-container">
+              <div class="carrusel">
+                
+                  <ul>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                              <h2>PROMO 1</h2> <!-- Para diferenciar imagenes-->
+                             
+                          </div> 
+    
+                      </li>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                            <h2>PROMO 2</h2> <!-- Para diferenciar imagenes-->
+                            
+                        </div> 
+    
+                      </li>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                            <h2>PROMO 3</h2><!-- Para diferenciar imagenes-->
+                            
+                        </div> 
+    
+                      </li>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                            <h2>PROMO 4</h2><!-- Para diferenciar imagenes-->
+                            
+                        </div> 
+    
+                      </li>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                            <h2>PROMO 5</h2><!-- Para diferenciar imagenes-->
+                            
+                        </div> 
+    
+                      </li>
+                      <li>
+                          <img src="./img/Promo1.jpg" alt="">
+                          <div class="text-t">
+                            <h2>PROMO 6</h2><!-- Para diferenciar imagenes-->
+                            
+                        </div> 
+    
+                      </li>
+                  </ul>
+                  
+              </div>
+          </div>
+          </section>
+          <br><br>
+          <section class="prod-cards">
+            <h2>Productos populares</h2>
+            
+            <div class="cards">
+            <article class="produc">
+                <img  src="./img/logo_buloneria.png" alt="prod-1">
+                
+            </article>
+            <article class="produc">
+                <img  src="img/logo_buloneria.png" alt="prod-1">
+                
+            </article>
+            <article class="produc">
+                <img  src="img/logo_buloneria.png" alt="prod-1">
+                
+            </article>
+            
+            
+            </div>
+            <div class="btn">
+            <button class="btn-mas">
+                <a href="plantillas/productos.html"><span>Ver más</span></a>
+            </button>
+        </div>
+        </section>
+        <br><br>
 
-                  </li>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                        <h2>PROMO 2</h2> <!-- Para diferenciar imagenes-->
-                        
-                    </div> 
-
-                  </li>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                        <h2>PROMO 3</h2><!-- Para diferenciar imagenes-->
-                        
-                    </div> 
-
-                  </li>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                        <h2>PROMO 4</h2><!-- Para diferenciar imagenes-->
-                        
-                    </div> 
-
-                  </li>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                        <h2>PROMO 5</h2><!-- Para diferenciar imagenes-->
-                        
-                    </div> 
-
-                  </li>
-                  <li>
-                      <img src="./img/Promo1.jpg" alt="">
-                      <div class="text-t">
-                        <h2>PROMO 6</h2><!-- Para diferenciar imagenes-->
-                        
-                    </div> 
-
-                  </li>
-              </ul>
+          <section class="info">
+            <div class="info-compras">
+                    <div class="compras">
+                        <img src="img/como-compra2.jpg" alt="compras">
+                  </div>
+              <br>
               
           </div>
-      </div>
-      </section>
-      <br><br><br><br>
-      <div class="info-compras">
-      <section class="info">
-        <div class="compras">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rem consectetur assumenda ex temporibus eaque id quibusdam suscipit, ipsum ad iusto dolore voluptas unde quam dolores sed, quos soluta officiis.
-            Voluptates soluta reiciendis, quibusdam tempora illum ipsum numquam nostrum provident facilis odio suscipit, ex aspernatur explicabo nulla consequuntur! Nisi ratione culpa assumenda expedita doloribus. Pariatur maxime autem impedit et architecto!
-            Maiores maxime possimus tenetur, beatae esse praesentium iusto recusandae laudantium ut id sit ea inventore? Iure vel numquam facilis, nulla ab molestiae atque quia qui odit rerum delectus suscipit illum!
-            Placeat quaerat tempora assumenda omnis laudantium molestias labore eum dignissimos neque, ipsa quos praesentium repudiandae incidunt velit harum nam illo doloribus corrupti! Exercitationem in numquam dolorem fuga, quas consequuntur earum!
-            Quo doloremque dolorum itaque, deserunt incidunt cumque eius unde eum maiores non ipsam numquam voluptatem nemo necessitatibus iure vitae magnam velit a rem totam repudiandae sequi eos est provident? Nulla!</p>
-        </div>
-        <br>
-        <div class="envios">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt veritatis sapiente ad consequatur voluptatum fuga dolorem quasi dolores placeat doloremque? Laboriosam natus debitis veniam, velit deleniti enim omnis quas eius.
-            Laudantium amet nobis deleniti? Adipisci ea vitae saepe quas? Quam fugiat, tempora facere consequatur culpa esse maxime aliquam porro repellendus vitae ratione impedit a! Architecto exercitationem veritatis alias praesentium quae.
-            Amet ducimus consequatur iste? Incidunt temporibus non fugiat architecto laboriosam fuga veritatis eum iure tenetur? Rem quae odit tempora, sed consequatur distinctio impedit. Fugiat explicabo aperiam quasi saepe nam repudiandae.
-            Laborum repellat praesentium impedit quisquam vero ea qui officiis eius maiores aliquam, id quos iure, cumque natus debitis ad totam, sapiente animi tempore. Ut quod beatae harum ipsam veritatis corrupti.
-            Perspiciatis hic nesciunt atque in, quisquam modi optio odit tempore dignissimos, nobis architecto quibusdam earum ipsum mollitia adipisci obcaecati! Quaerat, minima. Sapiente esse laboriosam, beatae reiciendis minima eveniet odit quis!
-            Delectus, facilis. Totam reprehenderit, fuga natus tenetur aliquid quia pariatur ratione, aliquam quaerat veniam suscipit facere eaque rerum? Illo voluptatibus eum est porro labore suscipit nisi a in voluptates accusantium.</p>
-        </div>
-        <br>
-        <div class="pagos">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, provident, quis laudantium delectus amet excepturi illo dolorem necessitatibus atque voluptatum molestiae iste similique ut culpa at nemo id voluptates qui.
-            Similique dolor eaque dolorem itaque. Eaque illum nulla laudantium optio impedit, culpa repudiandae alias ratione ex exercitationem? Explicabo quisquam ad veritatis, maiores, sint minus voluptatum voluptas officia illum, eligendi debitis.</p>
-        </div>
-    </div>
-    </section>
-    <br><br>
-    <hr class="linea">
-    <br><br><br><br>
-    <section class="prod-cards">
-        <h2>Productos populares</h2>
-        
-        <div class="cards">
-        <article class="produc">
-            <img  src="./img/logo_buloneria.png" alt="prod-1">
-            
-        </article>
-        <article class="produc">
-            <img  src="img/logo_buloneria.png" alt="prod-1">
-            
-        </article>
-        <article class="produc">
-            <img  src="img/logo_buloneria.png" alt="prod-1">
-            
-        </article>
-        
-        
-        </div>
-        <div class="btn">
-        <button class="btn-mas">
-      <!-- En este enlace la carpeta "plantillas" se refiere a la carpeta "html"? -->
-            <a href="plantillas/productos.html"><span>Ver más</span></a>
-        </button>
-    </div>
-    </section>
+          </section>
+          <br><br><br>
+    
+
     </main>
-     <footer align="center">
+    <footer align="center">
       
         <hr class="linea">
-        <br><br>
+        <div class="footer-div">
         <a href="http://facebook.com"><img src="./img/logo-face.png" alt="facebook"></a>
         <a href="http://instagram.com"><img src="./img/logo-inst.png" alt="instagram"></a>
         <a href="http://twitter.com"><img src="./img/logo-tw.png" alt="twitter"></a>
@@ -171,22 +140,10 @@
         <p>Telefono: 1112345678</p>
         <p>Copyright 2023©</p>
 <br><br><p>Página Web Desarrollada en Curso Codo a Codo</p>
-
+</div>
     </footer> 
-<script>
-    const navToggle = document.querySelector(".nav-toggle");
-    const navMenu = document.querySelector(".nav-menu");
+
+    <script src="./js/main.js"></script>
     
-    navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("nav-menu_visible");
-    
-      if (navMenu.classList.contains("nav-menu_visible")) {
-        navToggle.setAttribute("aria-label", "Cerrar menú");
-      } else {
-        navToggle.setAttribute("aria-label", "Abrir menú");
-      }
-    });
-    </script>
-   
 </body>
 </html>

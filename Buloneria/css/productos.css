@@ -1,0 +1,29 @@
+.lista_productos{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .cards1{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    width: 100%;
+    
+  }
+.lista{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #3d348b89;
+  }
+  
+  .lista img{
+    width: 50%;
+  }

@@ -1,0 +1,27 @@
+#contactForm{
+    width: 60%;
+    margin: auto;
+    background-color: #FCCF31;
+}
+
+#msj{
+    resize: none;
+    height: fit-content;
+}
+.container{
+    margin-top: 20px;
+}
+
+.form-label{
+    color: #3c3c3c;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.button input{
+    margin: 0 20px;
+}
+

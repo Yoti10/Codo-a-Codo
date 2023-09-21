@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulonera</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/header-foot.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/contacto-styles.css">
-    <!-- Bootstrap css (sólo en formulario) -->
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+ <!-- Bootstrap css (sólo en formulario) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Fontawesome -->
+ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-</head>
 
+</head>
 <body>
     <header class="header">
-        <!-- Cambié algunos atributos en este html:
-        class="nav" -> class="nav-c"
-        class="nav-link" -> class="nav-link-c"
-        Los estilos para estas clases estan en el archivo "contacto-styles.css"
-    Esto lo hice para que los estilos de Bootstrap no se superpusieran a los estilos originales (en bootstrap también existen las clases nav y nav-link)-->
-        <nav class="nav-c">
-            <a href="../index.html" class="logo">
-                <img src="../img/logo_buloneria.png" alt="Logo">
-            </a>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="productos.html" class="nav-menu-link nav-link-c">Productos</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="quienes.html" class="nav-menu-link nav-link-c">Quienes somos</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="contacto.html" class="nav-menu-link nav-link-c">Contacto</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="registro.html" class="nav-menu-link nav-link-c nav-menu-link_active">Registrarse</a>
-                </li>
+        
+        <a href="../index.html"><img src="../img/logo_buloneria.png" alt="" class="logo"></a>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        
+        <div class="nav-header" id="nav-header">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list-c">
+                <li><a href="../html/productos.html">Productos</a></li>
+                <li><a href="../html/quienes.html">Quienes Somos</a></li>
+                <li><a href="../html/registro.html">Registro</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        
+        </div>
     </header>
-
     <main>
-
-
+        
         <div class="container mb-5">
             <h1>Dejanos tu mensaje</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sequi velit unde. Adipisci,
@@ -82,18 +70,21 @@
                  
                 </div>
 
-                <div class="container btn">
-                    <input type="submit" value="Enviar" class="btn btn-primary" />
-                    <input type="reset" value="Limpiar" class="btn btn-secondary" />
+                <div class="container button">
+                    <input type="submit" value="Enviar" class="btn btn-danger" />
+                    
+                    <input type="reset" value="Limpiar" class="btn btn-light" />
                 </div>
             </form>
+            
         </div>
+    <br><br><br>
+
     </main>
-
     <footer align="center">
-
+      
         <hr class="linea">
-        <br><br>
+        <div class="footer-div">
         <a href="http://facebook.com"><img src="../img/logo-face.png" alt="facebook"></a>
         <a href="http://instagram.com"><img src="../img/logo-inst.png" alt="instagram"></a>
         <a href="http://twitter.com"><img src="../img/logo-tw.png" alt="twitter"></a>
@@ -101,29 +92,12 @@
         <p>Direccion: Calle Falsa 123, CABA</p>
         <p>Telefono: 1112345678</p>
         <p>Copyright 2023©</p>
-        <br><br>
-        <p>Página Web Desarrollada en Curso Codo a Codo</p>
+<br><br><p>Página Web Desarrollada en Curso Codo a Codo</p>
+</div>
 
-    </footer>
-    <script>
-        const navToggle = document.querySelector(".nav-toggle");
-        const navMenu = document.querySelector(".nav-menu");
+    </footer> 
 
-        navToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("nav-menu_visible");
-
-            if (navMenu.classList.contains("nav-menu_visible")) {
-                navToggle.setAttribute("aria-label", "Cerrar menú");
-            } else {
-                navToggle.setAttribute("aria-label", "Abrir menú");
-            }
-        });
-    </script>
-    <!-- Bootstrap js (sólo en formulario) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-
+    <script src="../js/main.js"></script>
+    
 </body>
-
 </html>
