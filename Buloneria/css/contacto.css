@@ -4,6 +4,18 @@
     background-color: #FCCF31;
 }
 
+@media (max-width: 768px){
+    #contactForm{
+        width: 90%;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
 #msj{
     resize: none;
     height: fit-content;
@@ -18,9 +30,8 @@
 .button{
     display: flex;
     justify-content: center;
-    
-
 }
+
 .button input{
     margin: 0 20px;
 }

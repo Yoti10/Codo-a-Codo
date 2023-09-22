@@ -1,0 +1,48 @@
+@import 'animate.css';
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 90%;
+    height: 30%;
+    margin: 2em auto;
+    padding: 1.5em;
+    border-radius: .9rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+    }
+    #especial{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }
+
+.imagen{
+    width: 35vw;
+    margin: auto;
+}
+
+@media (max-width: 768px){
+    .imagen{
+        width: 55vw;
+    }
+}
+
+.img{
+    width: 100%;
+    border-radius: .9em;
+
+}
+
+.parrafo{
+    display: flex;
+    align-items: center;
+}
+
+.parrafo p{
+    font-size: 1.2rem;
+}
