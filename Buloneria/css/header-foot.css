@@ -182,6 +182,9 @@ header{
 /*FIN DE HEADER*/
 
 /*FOOTER*/
+
+
+
 footer{
     /*display: block;*/
     height: 35vh;
@@ -199,4 +202,13 @@ footer img:hover{
 .footer-div{
     padding-top: 20px;
     margin: 0;
+}
+footer p{
+    margin-top:1rem;
+    margin-bottom: 0;
+}
+
+img,
+svg {
+    vertical-align: middle
 }

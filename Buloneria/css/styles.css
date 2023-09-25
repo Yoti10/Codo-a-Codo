@@ -110,6 +110,16 @@ body{
         transform: translateX(-500%);
     }
   }
+  @media (max-width: 1030px) {
+    
+    .info-compras img{
+      
+      width: 60vw;
+      margin-left: 20px;
+      right: 0;
+      
+    }
+  }
   
   /* Estilos para pantallas más pequeñas (media query) */
   @media (max-width: 768px) {
@@ -122,6 +132,11 @@ body{
       padding: 0px;
       margin-top:-4px;   
     }
+    .info-compras img{
+      
+      width: 80vw;
+      margin-left: -30px;
+    }
   }
   
   /* Estilos para pantallas aún más pequeñas (media query) */
@@ -131,6 +146,14 @@ body{
     }
     .text-t p {
       font-size: 18px; 
+    }
+    .info-compras img{
+      
+      width: 80vw;
+      justify-content: center;
+      margin-left: -30px;
+      right: 0;
+      
     }
   }
 
