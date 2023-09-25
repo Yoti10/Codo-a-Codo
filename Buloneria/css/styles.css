@@ -119,6 +119,16 @@ body {
     transform: translateX(-500%);
   }
 }
+  @media (max-width: 1030px) {
+    
+    .info-compras img{
+      
+      width: 60vw;
+      margin-left: 20px;
+      right: 0;
+      
+    }
+  }
 
 /* Estilos para pantallas más pequeñas (media query) */
 @media (max-width: 768px) {
@@ -127,22 +137,21 @@ body {
     margin-top: 0px;
   }
 
-  .carrusel {
-    padding: 0px;
-    margin-top: -4px;
+     .carrusel{
+      padding: 0px;
+      margin-top:-4px;   
+    }
   }
-}
-
-/* Estilos para pantallas aún más pequeñas (media query) */
-@media (max-width: 480px) {
-  .text-t h2 {
-    font-size: 30px;
+  
+  /* Estilos para pantallas aún más pequeñas (media query) */
+  @media (max-width: 480px) {
+    .text-t h2 {
+      font-size: 30px; 
+    }
+    .text-t p {
+      font-size: 18px; 
+    }
   }
-
-  .text-t p {
-    font-size: 18px;
-  }
-}
 
 
 .info-compras {
