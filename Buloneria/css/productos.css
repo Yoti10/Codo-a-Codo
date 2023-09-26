@@ -6,6 +6,15 @@
     width: 100%;
     text-align: center;
   }
+
+  .lista_productos h2{
+    font-size: 2rem;
+    margin-top: 1.8vh;
+    text-align: center;
+    font-weight:normal;
+    text-transform: uppercase;
+  }
+
   .cards1{
     display:flex;
     justify-content:space-around;
@@ -26,4 +35,16 @@
   
   .lista img{
     width: 50%;
+  }
+
+  .lista a{
+    color:#e2e2e2;
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: .3rem;
+  }
+
+  .lista a:hover{
+    background-color: #FCCF31;
+    color:  #3d348b89;
   }

@@ -1,3 +1,5 @@
+
+
 #contactForm{
     width: 60%;
     margin: auto;
@@ -22,6 +24,14 @@
 }
 .container{
     margin-top: 20px;
+}
+
+.container h1{
+    font-size: 2rem;
+    margin-top: 1.8vh;
+    text-align: center;
+    font-weight:normal;
+    text-transform: uppercase;
 }
 
 .form-label{

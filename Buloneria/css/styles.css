@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
   /*font-family: Arial, Helvetica, sans-serif;*/
   font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
@@ -123,10 +124,9 @@ body {
     
     .info-compras img{
       
-      width: 60vw;
+      width: 80vw;
       margin-left: 20px;
       right: 0;
-      
     }
   }
 
@@ -175,6 +175,8 @@ body {
   text-align: center;
   color: #171717;
   padding-bottom: 50px;
+  font-size: 1.9rem;
+
 }
 
 .cards {
@@ -216,10 +218,11 @@ body {
 
 }
 
-.btn-mas a {
+.btn-mas a{
   text-decoration: none;
   font-size: 20px;
   color: #1c1c1c;
+  width: inherit;
 }
 
 .btn-mas {
@@ -238,7 +241,9 @@ body {
 }
 
 
-
+.btn-mas:hover{
+  background-color: #fab43a;
+}
 
 
 hr {
