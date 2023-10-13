@@ -1,163 +1,164 @@
 
 .registration-form {
-  position: relative;
-  height: 120vh;
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 50px;
-  z-index: 0;/*x*/
- }
-
-.registration-form form {
-  position:absolute ;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40vw;
-  padding: 40px;
-  background-color: #E6AF2E;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-#register-butt{
-  
-  justify-content: center;
-  width: 40%;
-  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-}
-.register-button{
-  display: block;
-  margin: auto;
-  padding: 15px 30px;
-  border: none;
-  background-color: rgb(182, 49, 49);
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 30px;
-}
-
-#register-butt:active{
-  box-shadow: 0 0 0 0;
-
-}
-.register-button:hover{
-  color: #ececec;
-  background-color: rgb(183, 16, 16);
-  transform: scale(1.05);
-  box-shadow: 0 0 0 0;
-}
-.register-button:active{
-  transform: scale(1);
-  background-color: rgb(117, 32, 32);
-  
-}
-
-.registration-form label,
-.registration-form input[type="text"],
-.registration-form input[type="email"],
-.registration-form input[type="password"],
-.registration-form input[type="submit"] {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  box-sizing: border-box;
-  border-radius: 22px;
-}
-
-
-
-@media (max-width: 1024px) {
-
-  .registration-form {
     position: relative;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 30px;
-    height: 140vh;
-   }
-  
-  .registration-form form {
-    position:absolute ;
-    top: 55%;
-    left: 50%;
-    /*transform: translate(-50%, -50%);*/
-    width: 80vw;
-    /*padding: 10px;*/
-    background-color: #E6AF2E;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
- 
-}
-
-@media (max-width: 768px) {
-
-  .registration-form {
-    position: relative;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 30px;
-    height: 160vh;
-   }
-   .registration-form form {
-    position:absolute ;
-    top: 45%;
-    left: 50%;
-    /*transform: translate(-50%, -50%);*/
-    width: 80vw;
-    /*padding: 10px;*/
-    background-color: #E6AF2E;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
- 
-  #register-butt{
-  
-    justify-content: center;
-    width: 60%;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
-  }
-  
-}
-
-
-@media (max-width: 480px) {
-
-  .registration-form {
-    position: relative;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 30px;
     height: 120vh;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    z-index: 0;
    }
   
   .registration-form form {
     position:absolute ;
     top: 50%;
     left: 50%;
-    /*transform: translate(-50%, -50%);*/
-    width: 80vw;
-    /*padding: 10px;*/
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    padding: 40px;
     background-color: #E6AF2E;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-  
+
   #register-butt{
-  
+    
     justify-content: center;
-    width: 60%;
+    width: 40%;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
   }
+  .register-button{
+    display: block;
+    margin: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(182, 49, 49);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
 
-}
+  #register-butt:active{
+    box-shadow: 0 0 0 0;
 
+  }
+  .register-button:hover{
+    color: #ececec;
+    background-color: rgb(183, 16, 16);
+    transform: scale(1.05);
+    box-shadow: 0 0 0 0;
+  }
+  .register-button:active{
+    transform: scale(1);
+    background-color: rgb(117, 32, 32);
+    
+  }
+  
+  .registration-form label,
+  .registration-form input[type="text"],
+  .registration-form input[type="email"],
+  .registration-form input[type="password"],
+  .registration-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 22px;
+  }
+  
+
+
+  @media (max-width: 1024px) {
+
+    .registration-form {
+      position: relative;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+      height: 140vh;
+     }
+    
+    .registration-form form {
+      position:absolute ;
+      top: 55%;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      width: 80vw;
+      /*padding: 10px;*/
+      background-color: #E6AF2E;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+   
+  }
+
+  @media (max-width: 768px) {
+
+    .registration-form {
+      position: relative;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+      height: 160vh;
+     }
+     .registration-form form {
+      position:absolute ;
+      top: 45%;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      width: 80vw;
+      /*padding: 10px;*/
+      background-color: #E6AF2E;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+   
+    #register-butt{
+    
+      justify-content: center;
+      width: 60%;
+      box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    }
+    
+  }
+
+
+  @media (max-width: 480px) {
+
+    .registration-form {
+      position: relative;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+      height: 120vh;
+     }
+    
+    .registration-form form {
+      position:absolute ;
+      top: 50%;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      width: 80vw;
+      /*padding: 10px;*/
+      background-color: #E6AF2E;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    #register-butt{
+    
+      justify-content: center;
+      width: 60%;
+      box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+    }
+  
+  }
+
+  

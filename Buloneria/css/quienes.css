@@ -1,35 +1,81 @@
-@import 'animate.css';
+/*@import 'animate.css';*/
 
-.tarjetas{
-    font-size: 1.3rem;
-    width: 100%;
-    overflow-x: hidden;
+.imagen-up{
+    grid-area: imagenup;
+}
+.parrafo-up{
+    grid-area: parrafoup;
 }
 
-.contenedor{
+.imagen-medium{
+    grid-area: imagenmedium;
+}
+.parrafo-medium{
+    grid-area: parrafomedium;
+}
+.imagen-down{
+    grid-area: imagendown;
+}
+.parrafo-down{
+    grid-area: parrafodown;
+}
+
+.contenedor-grid{
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    width: 90%;
-    height: 30%;
-    margin: 2em auto;
+    width: 80%;
+    height: 100%;
+    margin: auto;
     padding: 1.5em;
-    border-radius: .9rem;
+    border-radius: .9rem;   
+    z-index: 0;
+    grid-template-columns: 40% 40%;
+    gap: 5rem;
+    grid-template-areas:
+    "imagenup parrafoup"
+    "parrafomedium imagenmedium "
+    "imagendown parrafodown";
 }
 
-h1{
-    font-size: 2rem;
-    margin-top: 1.8vh;
-    text-align: center;
-    font-weight:normal;
-    text-transform: uppercase;
-}
+@media (max-width: 768px) {
+    .contenedor-grid {
+        position: relative;
+        width: 90%;
+        margin: 2em auto;
+        gap: 2rem;
+        grid-template-columns: 80%;
+        grid-template-areas:
+        "imagenup" 
+        "parrafoup"
+        "imagenmedium "
+        "parrafomedium" 
+        "imagendown" 
+        "parrafodown";
+        text-align: left;
+        /*align-items: center;*/
+        justify-content: center;
+    
+    }
+    #especial{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .imagen{
+        width: 100%;
+        height: auto;
+    }
+    .imagen-medium{
+        padding-top: 10vh;
+    }
+    .imagen-down{
+        padding-top: 10vh;
+    }
+  }
 
 .imagen{
-    width: 35vw;
-    margin: auto;
+    width: 100%;
+    
 }
-
 
 .img{
     width: 100%;
@@ -39,27 +85,11 @@ h1{
 
 .parrafo{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .parrafo p{
-    padding: .8rem;
-    width: 80%;
-    text-align: center;
-    margin: auto;
+    font-size: 1.6rem;
 }
-
-@media (max-width: 768px) {
-    .contenedor {
-      grid-template-columns: 1fr;
-    }
-    #especial{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .imagen{
-        width: 55vw;
-    }
-    .parrafo p{
-        width: 100%;
-    }
-  }

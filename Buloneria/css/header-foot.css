@@ -39,6 +39,14 @@ header{
 .abrir-menu, .cerrar-menu{
     display:none;
 }
+
+
+/*      teléfonos apaisados (576px)
+        tabletas (768px)
+        portátiles (992px)
+        pantallas de escritorio extra grandes (1200px)
+*/
+
 /*REGLA PARA PANTALLAS MAYORES A 640 PIXELES*/
 @media (min-width: 641px){
     .nav-header ul li a:hover {
@@ -82,6 +90,8 @@ header{
         background-color: transparent;
         cursor: pointer;
         margin-right: 30px;
+        
+        
     }
     .abrir-menu {
         /*color: #1c1c1c;*/
@@ -124,16 +134,17 @@ header{
         background-color: #343434;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
-       
+        z-index: 1;
     }
     .nav-header.visible{
         opacity: 1;
         visibility: visible;
-        z-index: 1;
     }
 
     .nav-list-c{
         flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: end;
         align-items: end;
         padding: 0;
         margin: 0;
@@ -177,6 +188,7 @@ header{
 /*FIN DE HEADER*/
 
 /*FOOTER*/
+
 
 
 

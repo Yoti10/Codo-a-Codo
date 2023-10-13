@@ -6,6 +6,7 @@ abrir.addEventListener("click", () => {
     navBar.classList.add("visible");
 });
 
+
 cerrar.addEventListener("click", () => {
     navBar.classList.remove("visible");
 });
