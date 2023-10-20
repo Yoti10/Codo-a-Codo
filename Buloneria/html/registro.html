@@ -36,22 +36,26 @@
     <main>
             <div class="registration-form">
         <h2>Registro de Usuario</h2>
-        <form action="" method="post">
+        <form onsubmit="return validar();" id="form" action="#" method="post">
             <h2>Registro de Usuario</h2>
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" required>
+            <input id="nombre" type="text" name="nombre">
+            <div id="valid_nombre"></div>
 
             <label for="correo">Correo Electrónico:</label>
-            <input type="email" name="correo" required>
+            <input id="correo" type="email" name="correo" required>
+            <div id="valid_correo"></div>
 
             <label for="contrasena">Contraseña:</label>
-            <input type="password" name="contrasena" required>
+            <input id="contrasena" type="password" name="contrasena">
+            <div id="valid_pass"></div>
 
             <label for="confirmar_contrasena">Confirmar Contraseña:</label>
-            <input type="password" name="confirmar_contrasena" required> <br>
+            <input id="confirmar_contrasena" type="password" name="confirmar_contrasena">
+            <div id="valid_verif_pass"></div>
 
             <input class="register-button" id="register-butt" type="submit" value="Registrarse">
-            
+            <div id="error"></div>
         
         </form>
             </div>
@@ -77,6 +81,8 @@
     </footer> 
 
     <script src="../js/main.js"></script>
+        <script src="../js/registro.js"></script>
+
     
 </body>
 </html>
