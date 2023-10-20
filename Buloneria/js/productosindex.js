@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Elemento donde deseas mostrar los productos
+    const productosContainer = document.querySelector(".cards");
+  
+    // Realiza una solicitud para cargar el JSON
+    fetch("http://45.235.98.217:16113/buloneria/Buloneria.json")
+      .then(response => response.json())
+      .then(data => {
+        // Obtén un arreglo aleatorio de 3 productos
+        const productosAleatorios = obtenerProductosAleatorios(data.productos, 3);
+  
+        // Procesa los datos y muestra los productos aleatorios
+        productosAleatorios.forEach(producto => {
+          const productoHTML = `
+            <article class="produc">
+            <div class="producto">
+              <img src="${producto.imagen}" alt="${producto.nombre}">
+              <h3>${producto.nombre}</h3>
+              <p>Precio: $${producto.precio.toFixed(2)}</p>
+              </div>
+            </article>
+          `;
+          productosContainer.innerHTML += productoHTML;
+        });
+      })
+      .catch(error => console.error("Error al cargar los productos: " + error));
+  });
+  
+  // Función para obtener productos aleatorios
+  function obtenerProductosAleatorios(productos, cantidad) {
+    const productosAleatorios = [];
+    const copiaProductos = [...productos]; // Copia del arreglo original
+  
+    while (productosAleatorios.length < cantidad && copiaProductos.length > 0) {
+      const indiceAleatorio = Math.floor(Math.random() * copiaProductos.length);
+      productosAleatorios.push(copiaProductos.splice(indiceAleatorio, 1)[0]);
+    }
+  
+    return productosAleatorios;
+  }
