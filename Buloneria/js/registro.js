@@ -34,13 +34,13 @@ function validar(){
     }
 
     if(pass.value.length<8){
-        document.getElementById("valid_pass").innerHTML="La contraseña es muy corta";
+        document.getElementById("valid_pass").innerHTML="La contraseña es muy corta. Ingresa una con al menos 8 caracteres.";
         error=true;
         pass.focus();
     }
 
     if(passVerificada.value!=pass.value){
-        document.getElementById("valid_verif_pass").innerHTML="Las contraseñas no son iguales!";
+        document.getElementById("valid_verif_pass").innerHTML="Las contraseñas deben ser iguales. Por favor volve a ingresarla.";
         error=true;
         pass.focus();
     }

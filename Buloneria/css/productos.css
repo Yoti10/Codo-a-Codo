@@ -50,7 +50,19 @@
   }
   */
 
-  /* styles.css */
+/* styles.css */
+.lista_productos h2 {
+  text-align: center;
+  color: #201e1e;
+  margin: 20px auto;
+}
+
+#contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .producto {
   border: 1px solid #ccc;
   padding: 10px;
@@ -58,12 +70,35 @@
   text-align: center;
   width: 200px;
   display: inline-block;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .producto img {
   max-width: 100%;
+  border-radius: 10px;
+  transition: .5s ease-in-out;
+}
+
+.producto img:hover{
+  box-shadow: 0 0 5px rgba(31, 31, 31, 0.343);
+}
+
+.producto .p-line{
+  border-top: #ccc solid 1px;
 }
 
 .producto p {
   margin: 10px 0;
+}
+
+.producto p span {
+  font-weight: bold;
+  color: #e3ac2c ;
+}
+
+.producto p #precio{
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #61bf14;
 }
