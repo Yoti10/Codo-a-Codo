@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
           const productoHTML = `
             <div class="producto">
               <img src="${producto.imagen}" alt="${producto.nombre}">
-              <p>${producto.nombre}</p>
-              <p>Precio: $${producto.precio.toFixed(2)}</p>
-              <p>${producto.descripcion}</p>
-              <p>Categoría: ${producto.categoria}</p>
+              <p class="p-line">${producto.nombre}</p>
+              <p><span>Precio: </span> <span id="precio">$${producto.precio.toFixed(2)}</span> </p>
+              <p><span>Descripción: </span>${producto.descripcion}</p>
+              <p><span>Categoría: </span> ${producto.categoria}</p>
             </div>
           `;
           contenedorProductos.innerHTML += productoHTML;
