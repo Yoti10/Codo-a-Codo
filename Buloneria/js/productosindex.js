@@ -26,15 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error("Error al cargar los productos: " + error));
   });
   
-  // Función para obtener productos aleatorios
-  function obtenerProductosAleatorios(productos, cantidad) {
-    const productosAleatorios = [];
-    const copiaProductos = [...productos]; // Copia del arreglo original
+// Función para obtener productos aleatorios
+function obtenerProductosAleatorios(productos, cantidad) {
+    const productosAleatorios = [];     // Un arreglo vacío para almacenar los productos aleatorios
+    const copiaProductos = [...productos];  // Una copia del arreglo original de productos
   
+    // El bucle se ejecuta hasta que se hayan seleccionado la cantidad deseada de productos aleatorios
     while (productosAleatorios.length < cantidad && copiaProductos.length > 0) {
+      // Genera un índice aleatorio dentro del rango de la copiaProductos
       const indiceAleatorio = Math.floor(Math.random() * copiaProductos.length);
+  
+      // Selecciona el producto en el índice aleatorio y lo agrega al arreglo de productos aleatorios
       productosAleatorios.push(copiaProductos.splice(indiceAleatorio, 1)[0]);
+      // Elimina el producto seleccionado de la copia para evitar duplicados
     }
   
-    return productosAleatorios;
+    return productosAleatorios;  // Devuelve el arreglo de productos aleatorios
   }

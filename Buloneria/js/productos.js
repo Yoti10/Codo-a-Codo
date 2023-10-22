@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
         productos.forEach(producto => {
           const productoHTML = `
             <div class="producto">
-              <img src="${producto.imagen}" alt="${producto.nombre}">
+            <img src="${producto.imagen}" alt="${producto.nombre}" onmouseover="showDescription(this, '${producto.descripcion}')" onmouseout="hideDescription(this)">
               <p class="p-line">${producto.nombre}</p>
-              <p><span>Precio: </span> <span id="precio">$${producto.precio.toFixed(2)}</span> </p>
-              <p><span>Descripción: </span>${producto.descripcion}</p>
-              <p><span>Categoría: </span> ${producto.categoria}</p>
+            
+              
+              <br>
+              <p><span id="precio" class="precio">$${producto.precio.toFixed(2)} </span></p>
             </div>
           `;
           contenedorProductos.innerHTML += productoHTML;
@@ -26,3 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch(error => console.error("Error al cargar los productos: " + error));
   });
+
+ 
+
+  //<p><span>Categoría: </span> ${producto.categoria}</p>
+  //<span id="precio"> </span>
+/* 
+ <div class="popup">
+<p>${producto.descripcion}</p>
+</div>
+*/
+  

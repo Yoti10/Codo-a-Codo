@@ -64,12 +64,17 @@
 }
 
 .producto {
+  position: relative;
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
   text-align: center;
   width: 200px;
-  display: inline-block;
+  height: 45vh;
+  display: flex; /* Usa flexbox para alinear elementos verticalmente */
+  flex-direction: column; /* Alinea elementos verticalmente */
+  justify-content: space-between; /* Espaciado entre contenido y botón */
+  /*display: inline-block;*/
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -88,6 +93,9 @@
   border-top: #ccc solid 1px;
 }
 
+.p-line{
+  text-decoration: underline;
+}
 .producto p {
   margin: 10px 0;
 }
@@ -100,5 +108,16 @@
 .producto p #precio{
   font-weight: bolder;
   font-size: 1.2rem;
-  color: #61bf14;
+  color: #515151;
 }
+.producto #precio{
+  background-color: #FCCF31;
+  border-radius: 8px;
+  width: 10rem;
+  
+  padding: 10px; /* Añade espaciado dentro del botón */
+  margin-top: 10px; /* Espacio entre el contenido y el botón */
+
+}
+
+
