@@ -23,6 +23,8 @@
         
     </header>
     <main>
+
+        <!-- 
         <section class="lista_productos">
             <h2>LISTA DE PRODUCTOS</h2>
             <div id="contenedor-productos">
@@ -31,15 +33,47 @@
             </div>
            
         </section>
-    
+     -->
+
+     <h2>PRODUCTOS</h2>
+
+     <div id="app">
+        <div class="filtros-prod">
+            <div class="categoria">
+        <select name="categoria" id="categoria">
+            <option value="todos">Todos</option>
+            <option  v-for="categoria in categorias" :value="categoria" >{{categoria}}</option>     
+          </select> 
+
+          <button v-on:click="filtrarCateg()">Filtar</button><br>
+        </div>
+          <label for="orden">Ordenar:</label>
+          <input type="radio" name="orden" id="nombre-prod"><span>Nombre</span>
+          <input type="radio" name="orden" id="precio-prod"><span>Precio</span>
+          
+          <button v-on:click="ordenarProds()">Ordenar</button>
+        </div>
+        <section class="lista_productos">
+            <div id="contenedor-productos" class="cont-productos">
+                <div class="producto" v-for="producto in prodsFinales">
+                    <img v-bind:src="producto.imagen" :alt="producto.nombre" >
+                      <p class="p-line">{{producto.nombre}}</p>
+                   
+                      <br>
+                      <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
+                    </div>
+            </div>
+        </section>
+    </div>
     
 
     </main>
-    <footer class="foot" align="center">
+    <footer class="foot">
       
    
 
-    </footer> 
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../js/head-foot.js"></script>
     <script src="../js/productos.js"></script>
     <script src="../js/main.js"></script>

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const productosContainer = document.querySelector(".cards");
   
     // Realiza una solicitud para cargar el JSON
-    fetch("http://45.235.98.217:16113/buloneria/Buloneria.json")
+    fetch("https://d2revenge.com/Json/Buloneria.json")
       .then(response => response.json())
       .then(data => {
         // Obtén un arreglo aleatorio de 3 productos
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="producto">
               <img src="${producto.imagen}" alt="${producto.nombre}">
               <h3>${producto.nombre}</h3>
-              <p>Precio: $${producto.precio.toFixed(2)}</p>
+              <p>$${producto.precio.toFixed(2)}</p>
               </div>
             </article>
           `;
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error("Error al cargar los productos: " + error));
   });
   
-// Función para obtener productos aleatorios
+// Función para tener productos aleatorios
 function obtenerProductosAleatorios(productos, cantidad) {
     const productosAleatorios = [];     // Un arreglo vacío para almacenar los productos aleatorios
     const copiaProductos = [...productos];  // Una copia del arreglo original de productos

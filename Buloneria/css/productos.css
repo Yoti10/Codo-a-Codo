@@ -1,67 +1,52 @@
-/*.lista_productos{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-  }*/
-/*
-  .lista_productos h2{
-    font-size: 2rem;
-    margin-top: 1.8vh;
-    text-align: center;
-    font-weight:normal;
-    text-transform: uppercase;
-  }
-  */
-  /*.cards1{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-    width: 100%;
-    
-  }
-.lista{
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1em;
-    background-color: #3d348b89;
-  }
+main h2{ 
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px ;
+}
+#app button{
+  margin-left: 10px;
+  color: #FCCF31;
+  background-color: #545454;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+
+}
+#app input{
+  margin-left: 20px;
+}
+
+.filtros-prod{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  padding: 20px;
   
-  .lista img{
-    width: 50%;
-  }*/
-/*
-  .lista a{
-    color:#e2e2e2;
-    font-weight: 700;
-    padding: .5rem;
-    border-radius: .3rem;
-  }
+}
+.filtros-prod .categoria button{
+  margin-right: 80px;
+}
 
-  .lista a:hover{
-    background-color: #FCCF31;
-    color:  #3d348b89;
-  }
-  */
+.lista_productos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+#contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-/* styles.css */
 .lista_productos h2 {
   text-align: center;
   color: #201e1e;
   margin: 20px auto;
 }
 
-#contenedor-productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .producto {
   position: relative;
@@ -71,10 +56,9 @@
   text-align: center;
   width: 200px;
   height: 45vh;
-  display: flex; /* Usa flexbox para alinear elementos verticalmente */
+  display: flex; /* Usa flex para alinear elementos verticalmente */
   flex-direction: column; /* Alinea elementos verticalmente */
-  justify-content: space-between; /* Espaciado entre contenido y botón */
-  /*display: inline-block;*/
+  justify-content: space-around; /* Espaciado entre contenido y botón */
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -94,7 +78,8 @@
 }
 
 .p-line{
-  text-decoration: underline;
+  font-weight: bold;
+  color: #201e1e;
 }
 .producto p {
   margin: 10px 0;
@@ -119,5 +104,3 @@
   margin-top: 10px; /* Espacio entre el contenido y el botón */
 
 }
-
-

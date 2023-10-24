@@ -1,5 +1,6 @@
 //JSON Buloneria: http://45.235.98.217:16113/buloneria/Buloneria.json
 
+/*
 
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error("Error al cargar los productos: " + error));
   });
 
- 
+ */
 
   //<p><span>Categoría: </span> ${producto.categoria}</p>
   //<span id="precio"> </span>
@@ -37,4 +38,57 @@ document.addEventListener("DOMContentLoaded", function () {
 <p>${producto.descripcion}</p>
 </div>
 */
-  
+
+const { createApp } = Vue;
+createApp({
+    data() {
+        return {
+            url: 'https://d2revenge.com/Json/Buloneria.json',
+            prods: [],
+            prodsFinales:[],
+            categorias:[],
+            categoria:""
+        }
+    },
+    methods: {
+        fetchdata(url) {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    this.prods = data.productos;//-->propiedad del objeto json
+                    this.prodsFinales=data.productos;
+
+                    for (producto of this.prods) {
+                        if (this.categorias.indexOf(producto.categoria) < 0)
+                           
+                        this.categorias.push(producto.categoria)
+                    }
+                    console.log(this.categorias)
+                    //------------------------
+
+
+
+                }
+                );
+        },
+        filtrarCateg(){
+            categoria=document.querySelector("select").value
+
+            if (categoria === "todos") {
+        this.prodsFinales = this.prods;
+    } else {
+        this.prodsFinales = this.prods.filter(x => x.categoria === categoria);
+    }
+        },
+        ordenarProds(){
+            if(document.querySelector("#nombre-prod").checked)
+                this.prodsFinales.sort((a,b)=> a.nombre.toUpperCase() >  b.nombre.toUpperCase() ? 1:-1)
+            else if (document.querySelector("#precio-prod").checked)
+                this.prodsFinales.sort((a,b)=> a.precio - b.precio)
+        }
+    },
+    created() {
+        this.fetchdata(this.url)
+    }
+
+}).mount('#app')

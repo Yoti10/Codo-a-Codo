@@ -116,7 +116,19 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-
+.cards p{
+  margin: auto;
+  margin-bottom: 0;
+  justify-content: center;
+  display: flex;
+  align-items: end;
+  bottom: 0;
+  background-color: #171717;
+  color: #FCCF31;
+  font-size: 2vw;
+  width: 50%;
+  border-radius: 8px;
+}
 .produc {
   margin: 0.3%;
   padding: 1%;
@@ -130,6 +142,7 @@ body {
   margin: 10px 0;
   /* Espaciado entre las imágenes */
   border-radius: 1em;
+  color: #171717;
   background-color: #FCCF31;
 }
 
