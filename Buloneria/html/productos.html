@@ -47,11 +47,13 @@
 
           <button v-on:click="filtrarCateg()">Filtar</button><br>
         </div>
-          <label for="orden">Ordenar:</label>
+        <div class="ordenar">
+          
           <input type="radio" name="orden" id="nombre-prod"><span>Nombre</span>
           <input type="radio" name="orden" id="precio-prod"><span>Precio</span>
           
           <button v-on:click="ordenarProds()">Ordenar</button>
+        </div>
         </div>
         <section class="lista_productos">
             <div id="contenedor-productos" class="cont-productos">
@@ -59,7 +61,7 @@
                     <img v-bind:src="producto.imagen" :alt="producto.nombre" >
                       <p class="p-line">{{producto.nombre}}</p>
                    
-                      <br>
+                      
                       <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
                     </div>
             </div>

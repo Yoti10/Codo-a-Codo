@@ -1,5 +1,5 @@
-//JSON Buloneria: http://45.235.98.217:16113/buloneria/Buloneria.json
-
+//JSON Buloneria TEST: http://45.235.98.217:16113/buloneria/Buloneria.json
+// JSON Buloneria WEB: https://d2revenge.com/Json/Buloneria.json
 /*
 
 // script.js

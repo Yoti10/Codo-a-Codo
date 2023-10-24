@@ -104,3 +104,60 @@ main h2{
   margin-top: 10px; /* Espacio entre el contenido y el botón */
 
 }
+@media (max-width: 534px) {
+  .filtros-prod{
+    flex-direction: column;
+    
+    margin: auto;
+  }
+  .categoria{
+    display: flex;
+    flex-direction: row;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .producto{
+    width: 90vw;
+    height: 250px;
+    margin: 10px auto 10px auto;
+    left: -20px;
+  }
+
+  .producto img{
+    max-width: 150px;
+    margin: 5px auto 0 auto;
+  }
+  
+
+
+}
+
+@media (max-width: 361px) {
+  .filtros-prod{
+    flex-direction: column;
+    
+    margin: auto;
+  }
+  .categoria{
+    display: flex;
+    flex-direction: row;
+    right: 20px;
+    padding: 10px;
+  }
+
+  .producto{
+    width: 90vw;
+    height: 200px;
+    margin: 10px auto 10px auto;
+  }
+
+  .producto img{
+    max-width: 100px;
+    margin: 5px auto 0 auto;
+  }
+
+
+
+}
+

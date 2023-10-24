@@ -265,6 +265,18 @@ hr {
       width: 15vw;
       height: 7vh;
     }
+    .produc img{
+      max-width: 150px;
+
+    }
+    .p-line{
+      font-size: 10vw;
+    }
+    .prod-cards a{
+      text-align: center;
+      align-items: center;
+      margin: auto;
+    }
   }
   
   /* Estilos para pantallas aún más pequeñas (media query) */
