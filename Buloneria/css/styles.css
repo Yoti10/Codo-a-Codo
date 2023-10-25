@@ -269,7 +269,9 @@ hr {
       max-width: 150px;
 
     }
-  
+    .p-line{
+      font-size: 10vw;
+    }
     .prod-cards a{
       text-align: center;
       align-items: center;
