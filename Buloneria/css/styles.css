@@ -243,6 +243,9 @@ hr {
       right: 0;
       
     }
+    .p-line-index{
+      font-size: 4vw;
+    }
 
     .btn-mas {
       width: 10vw;
@@ -270,7 +273,7 @@ hr {
 
     }
     .p-line-index{
-      font-size: 10vw;
+      font-size: 5vw;
     }
     .prod-cards a{
       text-align: center;
@@ -287,9 +290,14 @@ hr {
     .text-t p {
       font-size: 18px; 
     }
-
+    
     .btn-mas {
       width: 25vw;
       height: 7vh;
+    }
+  }
+  @media (max-width: 390px) {
+    .p-line-index{
+      font-size: 7vw;
     }
   }
