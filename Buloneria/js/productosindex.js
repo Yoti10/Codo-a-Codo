@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="producto">
               <img src="${producto.imagen}" alt="${producto.nombre}">
               <h3>${producto.nombre}</h3>
-              <p><span class="p-line">$${producto.precio.toFixed(2)}</span></p>
+              <p><span class="p-line-index">$${producto.precio.toFixed(2)}</span></p>
               </div>
             </article>
           `;
