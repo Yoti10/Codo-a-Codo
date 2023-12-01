@@ -43,11 +43,12 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            url: 'https://d2revenge.com/Json/Buloneria.json',
+            url: 'https://yoti.pythonanywhere.com/productos',
             prods: [],
             prodsFinales:[],
             categorias:[],
             categoria:""
+           
         }
     },
     methods: {
@@ -55,15 +56,15 @@ createApp({
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    this.prods = data.productos;//-->propiedad del objeto json
-                    this.prodsFinales=data.productos;
-
+                    this.prods = data;//-->propiedad del objeto json
+                    this.prodsFinales=data;
+                    
                     for (producto of this.prods) {
                         if (this.categorias.indexOf(producto.categoria) < 0)
                            
                         this.categorias.push(producto.categoria)
                     }
-                    console.log(this.categorias)
+                    //console.log(this.categorias)
                     //------------------------
 
 

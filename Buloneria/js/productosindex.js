@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const productosContainer = document.querySelector(".cards");
   
     // Realiza una solicitud para cargar el JSON
-    fetch("https://d2revenge.com/Json/Buloneria.json")
+    fetch("https://yoti.pythonanywhere.com/productos")
       .then(response => response.json())
       .then(data => {
         // Obtén un arreglo aleatorio de 3 productos
-        const productosAleatorios = obtenerProductosAleatorios(data.productos, 3);
+        const productosAleatorios = obtenerProductosAleatorios(data, 3);
   
         // Procesa los datos y muestra los productos aleatorios
         productosAleatorios.forEach(producto => {

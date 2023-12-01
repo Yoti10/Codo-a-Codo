@@ -60,10 +60,11 @@
                 <div class="producto" v-for="producto in prodsFinales">
                     <img v-bind:src="producto.imagen" :alt="producto.nombre" >
                       <p class="p-line">{{producto.nombre}}</p>
+                      <p class="p-line">Stock: {{producto.stock}}</p>
                    
                       
                       <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
-                    </div>
+                </div>
             </div>
         </section>
     </div>
