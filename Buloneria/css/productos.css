@@ -73,6 +73,7 @@ main h2{
   box-shadow: 0 0 5px rgba(31, 31, 31, 0.343);
 }
 
+
 .producto .p-line{
   border-top: #ccc solid 1px;
 }
@@ -104,6 +105,14 @@ main h2{
   margin-top: 10px; /* Espacio entre el contenido y el botón */
 
 }
+
+
+.btn-carrito {
+  position: relative;
+  margin: 0px; 
+  left: 27px;
+}
+
 @media (max-width: 534px) {
   .filtros-prod{
     flex-direction: column;
@@ -160,4 +169,3 @@ main h2{
 
 
 }
-

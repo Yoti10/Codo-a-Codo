@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 */
 
+
 const { createApp } = Vue;
 createApp({
     data() {
@@ -47,10 +48,15 @@ createApp({
             prods: [],
             prodsFinales:[],
             categorias:[],
-            categoria:""
+            categoria:"",
+            carrito: [],
+            productoAgregado: false,
+            
            
         }
     },
+
+    
     methods: {
         fetchdata(url) {
             fetch(url)
@@ -86,10 +92,50 @@ createApp({
                 this.prodsFinales.sort((a,b)=> a.nombre.toUpperCase() >  b.nombre.toUpperCase() ? 1:-1)
             else if (document.querySelector("#precio-prod").checked)
                 this.prodsFinales.sort((a,b)=> a.precio - b.precio)
-        }
+        },
+        agregarProducto(producto) {
+            // Buscar el producto en el carrito
+            const productoEnCarrito = this.carrito.find(p => p.id === producto.id);
+        
+            if (productoEnCarrito) {
+                // Si ya está en el carrito, aumenta la cantidad
+                productoEnCarrito.cantidad++;
+            } else {
+                // Si no está, agregalo con cantidad 1
+                const nuevoProductoEnCarrito = { ...producto, cantidad: 1 };
+                this.carrito.push(nuevoProductoEnCarrito);
+            }
+        
+            // Resta el stock del producto
+            producto.stock--;
+        
+            // Actualiza la instancia de Vue para ver el cambio en el carrito
+            this.$forceUpdate();
+        
+            console.log(`Producto ${producto.nombre} agregado al carrito.`);
+        
+            // Guarda el carrito y la lista completa de productos en el almacenamiento local
+            localStorage.setItem('carrito', JSON.stringify(this.carrito));
+            localStorage.setItem('prods', JSON.stringify(this.prods));
+        
+            this.productoAgregado = true;
+        },
+        
+       
+        irACarrito() {
+            // Ir a la pagina del carrito
+            window.location.href = '/html/carrito.html';
+        },
+    
+
     },
     created() {
         this.fetchdata(this.url)
     }
 
+
+    
 }).mount('#app')
+
+
+

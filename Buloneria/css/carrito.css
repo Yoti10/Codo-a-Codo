@@ -1,0 +1,67 @@
+table {
+    color:#201e1e;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  /*th, td {
+    border: 1px solid #000;
+    border-spacing: 0;
+    padding: 8px;
+
+  }*/
+  table{
+    font-size: 1.2rem;
+    border-collapse: separate;
+    border: #343434 3px solid;
+  }
+th {
+    padding: 8px;
+    /*background-color: #f2f2f2;*/
+    
+  }
+thead, tfoot{
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    
+  }
+
+td {
+    
+    padding: 8px;     
+    background: #1c1c1c;     
+    border-bottom: 1px solid #fff;
+    color: #FCCF31;    
+    border-top: 1px solid transparent; 
+    border: green 5px solid;
+}
+
+tr{
+    border: 2px solid white !important;
+    border-collapse: collapse;
+}
+
+
+tr:hover td { 
+    background: #FCCF31; 
+    color: #1c1c1c; 
+}
+
+
+
+.carrito button:hover{
+    color: #1c1c1c;
+    border-radius: 4px;
+    background-color: #FCCF31;
+    box-shadow: -3px 5px 14px 1px rgba(0,0,0,0.73);
+}
+
+
+
+
+
+  
+
+  
+  

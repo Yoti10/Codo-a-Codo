@@ -64,12 +64,20 @@
                    
                       
                       <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
+                      <button @click="agregarProducto(producto)" class="btn-carrito">Agregar al carrito</button>
                 </div>
-            </div>
-        </section>
-    </div>
-    
 
+
+            </div>
+
+            <button v-if="productoAgregado" class="boton-flotante" @click="irACarrito">
+                Ir al Carrito
+            </button>
+        </section>
+        
+    </div>
+
+    
     </main>
     <footer class="foot">
       
