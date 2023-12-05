@@ -1,0 +1,179 @@
+.container {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 70vh;
+
+}
+
+form {
+    background-color: #FCCF31;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.56);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+form h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form .input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form input{
+    border-radius: 4px !important;
+}
+
+form .input-group {
+    width: 200px !important; /* Puedes ajustar este valor según tus preferencias */
+    margin-bottom: 15px;
+}
+
+
+
+
+.form-control{
+    width: 300px !important;
+}
+
+
+.group-btn button {
+    width: 48%; /* Puedes ajustar este valor según tus preferencias */
+}
+
+
+
+
+@media (max-width: 960px) {
+    .container {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        height: 90vh;
+    
+    }
+    form {
+        background-color: #FCCF31;
+        box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.56);
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        max-height: 90vh;
+        margin-bottom: 50px;
+    }
+    form h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    form .input-group {
+        width: 100%; /* Cuando el ancho de la pantalla sea menor a 768px, muestra uno por línea */
+        padding: 0;
+        margin: auto;
+    }
+    .form-control{
+        width: 500px !important;
+    }
+   
+    .btn{
+        margin-top: 20px !important;
+    }
+    select{
+        margin-top: 20px !important;
+    }
+    
+}
+
+
+/* Consulta de medios para hacer que sea responsivo */
+@media (max-width: 768px) {
+    .container {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        height: 100vh;
+    
+    }
+    form {
+        background-color: #FCCF31;
+        box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.56);
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        max-height: 100vh;
+        margin-bottom: 50px;
+    }
+    form h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    form .input-group {
+        width: 100%; /* Cuando el ancho de la pantalla sea menor a 768px, muestra uno por línea */
+        padding: 0;
+        margin: auto;
+    }
+    .form-control{
+        width: 500px !important;
+    }
+    
+    .btn{
+        margin-top: 20px !important;
+    }
+    select{
+        margin-top: 20px !important;
+    }
+   
+    
+    
+}
+
+
+@media (max-width: 520px) {
+    .container {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 200px;
+        height: 110vh;
+    
+    }
+    form {
+        background-color: #FCCF31;
+        box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.56);
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+        max-height: 110vh;
+        margin-bottom: 50px;
+    }
+    form h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    form .input-group {
+        width: 100%; /* Cuando el ancho de la pantalla sea menor a 768px, muestra uno por línea */
+        padding: 0;
+        margin: auto;
+    }
+    .form-control{
+        width: 500px !important;
+    }
+   
+    
+    
+}

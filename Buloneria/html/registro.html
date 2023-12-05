@@ -22,31 +22,32 @@
         
     </header>
     <main>
-            <div class="registration-form">
+        <div class="container" id="app-registro">
+        <div class="registration-form">
         <h2>Registro de Usuario</h2>
         <form onsubmit="return validar();" id="form" action="#" method="post">
             <h2>Registro de Usuario</h2>
-            <label for="nombre">Nombre:</label>
-            <input id="nombre" type="text" name="nombre">
+            <label for="nombre">Nombre de usuario:</label>
+            <input id="nombre" type="text" name="nombre" v-model="nombre">
             <div id="valid_nombre"></div>
 
             <label for="correo">Correo Electrónico:</label>
-            <input id="correo" type="email" name="correo" required>
+            <input id="correo" type="email" name="correo" required v-model="email">
             <div id="valid_correo"></div>
 
             <label for="contrasena">Contraseña:</label>
-            <input id="contrasena" type="password" name="contrasena">
+            <input id="contrasena" type="password" name="contrasena" v-model="pw">
             <div id="valid_pass"></div>
 
-            <label for="confirmar_contrasena">Confirmar Contraseña:</label>
-            <input id="confirmar_contrasena" type="password" name="confirmar_contrasena">
-            <div id="valid_verif_pass"></div>
+            
 
-            <input class="register-button" id="register-butt" type="submit" value="Registrarse">
+            <button type="button" class="btn btn-danger" v-on:click="grabar()">REGISTRAR</button>
+            <!--<input class="register-button" id="register-butt" type="submit" v-on:click="grabar()">-->
             <div id="error"></div>
         
         </form>
             </div>
+        </div>
             
     </main>
     
@@ -57,9 +58,10 @@
         
 
     </footer> 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../js/head-foot.js"></script>
     <script src="../js/main.js"></script>
-        <script src="../js/registro.js"></script>
+    <script src="../js/registro.js"></script>
 
     
 </body>

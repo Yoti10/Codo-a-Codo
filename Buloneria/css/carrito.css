@@ -23,18 +23,18 @@ th {
     
   }
 thead, tfoot{
-    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%) !important; 
     
   }
 
 td {
     
     padding: 8px;     
-    background: #1c1c1c;     
+    background: #cbcaca;     
     border-bottom: 1px solid #fff;
-    color: #FCCF31;    
+    color: #222222;    
     border-top: 1px solid transparent; 
-    border: green 5px solid;
+    
 }
 
 tr{

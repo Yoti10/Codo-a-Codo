@@ -124,7 +124,7 @@ createApp({
        
         irACarrito() {
             // Ir a la pagina del carrito
-            window.location.href = '/html/carrito.html';
+            window.location.href = '../html/carrito.html';
         },
     
 
