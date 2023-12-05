@@ -63,8 +63,10 @@
                       <p class="p-line">Stock: {{producto.stock}}</p>
                    
                       
-                      <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
-                      <button @click="agregarProducto(producto)" class="btn-carrito">Agregar al carrito</button>
+                    <div class="precio-carrito">
+                        <p><span id="precio" class="precio">$ {{producto.precio.toFixed(2)}} </span></p>
+                        <button @click="agregarProducto(producto)" class="btn-carrito">Agregar al carrito</button>
+                    </div>
                 </div>
 
 

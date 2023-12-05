@@ -89,28 +89,30 @@ main h2{
 .producto p span {
   font-weight: bold;
   color: #e3ac2c ;
+  margin: auto;
 }
 
 .producto p #precio{
   font-weight: bolder;
   font-size: 1.2rem;
   color: #515151;
+  margin: auto;
 }
 .producto #precio{
   background-color: #FCCF31;
   border-radius: 8px;
   width: 10rem;
-  
+  margin: auto;
   padding: 10px; /* Añade espaciado dentro del botón */
   margin-top: 10px; /* Espacio entre el contenido y el botón */
 
 }
 
 
-.btn-carrito {
-  position: relative;
-  margin: 0px; 
-  left: 27px;
+.precio-carrito{
+  
+  margin: auto; 
+  
 }
 
 @media (max-width: 534px) {
@@ -131,6 +133,12 @@ main h2{
     height: 250px;
     margin: 10px auto 10px auto;
     left: -20px;
+  }
+  .precio-carrito {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+
   }
 
   .producto img{
@@ -165,7 +173,12 @@ main h2{
     max-width: 100px;
     margin: 5px auto 0 auto;
   }
+  .precio-carrito {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
 
+  }
 
 
 }
