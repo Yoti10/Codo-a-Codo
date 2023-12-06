@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Title</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Panel de Control</title>
+    <!--estilos y scripts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/header-foot.css">
     <link rel="stylesheet" href="../css/admin-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header id="header" class="header">
-        <!-- place navbar here -->
-    </header>
+    <header id="header" class="header"> </header>
+    
     <main>
         
         <div id="app" class="container">
+            <div v-if="SesionActiva">
             <div class="btn-admin">
             <button onclick="mostrartablaProductos()">Mostrar Productos</button>
             <button onclick="mostrartablaUsuarios()"  @click="mostrarProductos = false; fetchData()">Mostrar Usuarios</button>
@@ -40,7 +44,7 @@
                         <label for="busqueda" class="form-label visually-hidden">Buscar productos:</label>
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">
-                                <i class="bi bi-search"></i> <!-- Icono de búsqueda de Bootstrap Icons -->
+                                <i class="bi bi-search"></i> <!-- Icono de búsqueda de Bootstrap -->
                             </span>
                         </div>
                         <input type="text" class="form-control" id="busqueda" v-model="busqueda" @input="filtrarProductos" placeholder="Buscar productos por id, nombre, desc, cat o precio" aria-label="Buscar productos" aria-describedby="basic-addon1">
@@ -81,7 +85,6 @@
             </div>
             </div>
             <div class="tabla-usuarios ocultar-tabla" id="tabla-usuarios">
-                <!-- Tu tabla de usuarios -->
                 <h1>Usuarios</h1>
                 
                 <table  class="table table-bordered table-striped mt-3">
@@ -91,7 +94,6 @@
                       <th>Nombre</th>
                       <th>Tipo</th>
                       <th>Acciones</th>
-                      <!-- Otros encabezados si es necesario -->
                     </tr>
                   </thead>
                   <tbody>
@@ -103,25 +105,26 @@
                         <a class="btn btn-primary" :href="'usuarios_edit.html?id='+ usuario.id" >Editar</a>
                        <button type="button" class="btn btn-danger" v-on:click="eliminarUsuarios(usuario.id)" @click="mostrarProductos = false; fetchData()">Eliminar</button>
                       </td>
-                      <!-- Otros datos del usuario si es necesario -->
                     </tr>
                   </tbody>
                 </table>
               </div>
-            
+            </div>
+            <div v-else>
+                <!-- Página de acceso denegado para no administradores -->
+                <h2>Acceso denegado. Debes ser un administrador para ver esta página.</h2>
+            </div>
         </div>
     </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    
-    
-    <!--Link de Bootstrap-->
+
+    <footer class="foot">   </footer>
+    <!-- scripts --> 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script src="../js/head-foot.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!--Link de VUE-->
+    <script src="../js/head-foot.js"></script>
+    <script src="../js/main.js"></script> 
     <script src="../js/productos-admin.js"></script>
+    
 </body>
 </html>

@@ -53,8 +53,9 @@
 }
 #app{
     margin-bottom: 100px !important;
-    
+	min-height: 40vh;
 }
+
 
 thead{
 

@@ -21,7 +21,7 @@ const { createApp } = Vue
         categoria:"",
         busqueda: "",
         productosFiltrados: [],
-        
+        SesionActiva: false,
         email: "",
         pw: "",
         tipo: "cliente",
@@ -134,6 +134,10 @@ const { createApp } = Vue
     },
     created() {
         this.fetchData(this.url)
+        const storedEsAdmin = localStorage.getItem('SesionActiva');
+        if (storedEsAdmin) {
+            this.SesionActiva = JSON.parse(storedEsAdmin);
+        }
     },
   }).mount('#app')
 

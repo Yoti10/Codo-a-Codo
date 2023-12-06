@@ -1,3 +1,18 @@
+function conservarUnItemEnLocalStorage(itemKeyToPreserve) {
+  // Paso 1: Obtén el valor del elemento que deseas conservar
+  const valorConservado = localStorage.getItem(itemKeyToPreserve);
+
+  // Paso 2: Limpia completamente el localStorage
+  localStorage.clear();
+
+  // Paso 3: Restablece el valor del elemento conservado en el localStorage
+  localStorage.setItem(itemKeyToPreserve, valorConservado);
+}
+
+
+const SesionActiva = JSON.parse(localStorage.getItem('SesionActiva'));
+
+
 //Agregamos header con javascript:
 
 let hea=`
@@ -10,8 +25,11 @@ let hea=`
             <ul class="nav-list-c">
                 <li><a href="../html/productos.html">Productos</a></li>
                 <li><a href="../html/quienes.html">Quienes Somos</a></li>
-                <li><a href="../html/registro.html">Registro</a></li>
                 <li><a href="../html/contacto.html">Contacto</a></li>
+                ${SesionActiva
+                  ? '<li><a href="../index.html" onclick="conservarUnItemEnLocalStorage(\'prods\')">Cerrar Sesión</a></li>'
+                  : '<li><a href="../html/login.html">Ingresar</a></li>'}
+
             </ul>
         
         </div>`;

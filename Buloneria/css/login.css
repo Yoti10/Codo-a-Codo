@@ -1,5 +1,5 @@
 
-.registration-form {
+.login-form {
     position: relative;
     height: 120vh;
     text-align: center;
@@ -7,7 +7,7 @@
     z-index: 0;
    }
   
-  .registration-form form {
+  .login-form form {
     position:absolute ;
     top: 40vh;
     left: 50%;
@@ -55,11 +55,11 @@
     
   }
   
-  .registration-form label,
-  .registration-form input[type="text"],
-  .registration-form input[type="email"],
-  .registration-form input[type="password"],
-  .registration-form input[type="submit"] {
+  .login-form label,
+  .login-form input[type="text"],
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .login-form input[type="submit"] {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -72,7 +72,7 @@
 
   @media (max-width: 1024px) {
 
-    .registration-form {
+    .login-form {
       position: relative;
       
       text-align: center;
@@ -80,7 +80,7 @@
       height: 100vh;
      }
     
-    .registration-form form {
+    .login-form form {
       position:absolute ;
       top: 40vh;
       left: 50%;
@@ -98,14 +98,14 @@
 
   @media (max-width: 768px) {
 
-    .registration-form {
+    .login-form {
       position: relative;
       
       text-align: center;
       padding: 30px;
       height: 100vh;
      }
-     .registration-form form {
+     .login-form form {
       position:absolute ;
       top: 40vh;
       left: 50%;
@@ -130,7 +130,7 @@
 
   @media (max-width: 480px) {
 
-    .registration-form {
+    .login-form {
       position: relative;
       
       text-align: center;
@@ -138,7 +138,7 @@
       height: 80vh;
      }
     
-    .registration-form form {
+    .login-form form {
       position:absolute ;
       top: 40vh;
       left: 50%;
